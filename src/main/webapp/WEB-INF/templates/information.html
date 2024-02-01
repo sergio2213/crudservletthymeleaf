@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="webjars/bootstrap/5.3.2/css/bootstrap.min.css">
+    <script src="webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <title>Information</title>
+</head>
+<body>
+<div class="container">
+    <div class="card mt-4 w-75 mx-auto">
+        <div class="card-header">
+            <h2>CRUD Jakarta Servlet + Thymeleaf 3.1 + Bootstrap 5</h2>
+        </div>
+        <div class="card-body">
+            <h3 th:text="${message}"></h3>
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-secondary" th:href="@{/}">Back to Index</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

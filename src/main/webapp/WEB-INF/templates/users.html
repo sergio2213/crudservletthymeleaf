@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="webjars/bootstrap/5.3.2/css/bootstrap.min.css">
+    <script src="webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <title>List all</title>
+</head>
+<body>
+<div class="container">
+    <div class="card mt-4 w-75 mx-auto">
+        <div class="card-header">
+            <h2>CRUD Jakarta Servlet + Thymeleaf 3.1 + Bootstrap 5</h2>
+        </div>
+        <div class="card-body table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Birth</th>
+                    <th scope="col">Sex</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="user:${users}">
+                    <td th:text="${user.getId()}"></td>
+                    <td th:text="${user.getFirstName()}"></td>
+                    <td th:text="${user.getLastName()}"></td>
+                    <td th:text="${user.getEmail()}"></td>
+                    <td th:text="${user.getBirth()}"></td>
+                    <td th:text="${user.getSex()}"></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="card-footer">
+            <a th:href="@{/}" class="btn btn-secondary">Back to Index</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

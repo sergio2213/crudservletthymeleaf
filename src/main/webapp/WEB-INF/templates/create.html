@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="webjars/bootstrap/5.3.2/css/bootstrap.min.css">
+    <script src="webjars/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <title>Create</title>
+</head>
+<body>
+<div class="container">
+    <div class="card mt-4 w-75 mx-auto">
+
+        <div class="card-header">
+            <h2>CRUD Jakarta Servlet + Thymeleaf 3.1 + Bootstrap 5</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Create Operation</h5>
+            <form action="create" method="post" class="row g-3" id="createForm">
+                <div class="col-md-6">
+                    <label for="firstname" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="birth" class="form-label">Birth</label>
+                    <input type="date" class="form-control" id="birth" name="birth" required>
+                </div>
+
+
+
+                <div class="col-md-6">
+                    <div class="form-label">Sex</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sex" id="male" value="M" checked>
+                        <label class="form-check-label" for="male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sex" id="female" value="F">
+                        <label class="form-check-label" for="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <input class="btn btn-primary" type="submit" value="Create" form="createForm">
+            <a class="btn btn-secondary" th:href="@{/}">Back to Index</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
