@@ -1,0 +1,16 @@
+INSERT INTO forum.users (firstname, lastname, email, password, birth, sex)
+VALUES ('John', 'Doe', 'john.doe@example.com', 'password123', '1990-05-15', 'M'),
+       ('Alice', 'Smith', 'alice.smith@example.com', 'pass456', '1985-08-22', 'F'),
+       ('Bob', 'Johnson', 'bob.johnson@example.com', 'secure789', '1992-01-10', 'M'),
+       ('Emily', 'Davis', 'emily.davis@example.com', 'myp@ssword', '1988-12-03', 'F'),
+       ('Michael', 'Williams', 'michael.williams@example.com', 'mikepass', '1995-07-18', 'M'),
+       ('Sophia', 'Brown', 'sophia.brown@example.com', 'p@ssword123', '1987-04-25', 'F'),
+       ('David', 'Miller', 'david.miller@example.com', 'dave123', '1993-09-30', 'M'),
+       ('Olivia', 'Anderson', 'olivia.anderson@example.com', 'olivia_pass', '1986-06-12', 'F'),
+       ('Daniel', 'White', 'daniel.white@example.com', 'securepass', '1991-03-08', 'M'),
+       ('Emma', 'Taylor', 'emma.taylor@example.com', 'taylorpass', '1984-11-28', 'F'),
+       ('Christopher', 'Moore', 'chris.moore@example.com', 'c.moore_pass', '1994-02-14', 'M'),
+       ('Ava', 'Martin', 'ava.martin@example.com', 'avapassword', '1989-10-05', 'F'),
+       ('Andrew', 'Johnson', 'andrew.johnson@example.com', 'andrew123', '1997-06-20', 'M'),
+       ('Isabella', 'Clark', 'isabella.clark@example.com', 'isabella_pass', '1983-09-15', 'F'),
+       ('Ethan', 'Wright', 'ethan.wright@example.com', 'password_ethan', '1996-04-03', 'M');
